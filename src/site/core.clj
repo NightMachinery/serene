@@ -19,6 +19,6 @@
                     [:div {:id "app"}]
                     [:canvas {:id "hello-quil"}]
                     (-> "resources/footer.markdown" m/file->hiccup m/component)]
-             [:script {:src "/js/compiled/withering_spell.js" :type "text/javascript"}]
+             [:script {:src "./js/compiled/withering_spell.js" :type "text/javascript"}]
              "<script type=\"text/javascript\">withering_spell.system.go();</script>"
              "    <script type=\"text/javascript\">withering_spell.quilcore.run_sketch()</script>"]))
